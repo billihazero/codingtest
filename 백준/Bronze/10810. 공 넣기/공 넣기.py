@@ -1,0 +1,9 @@
+N,M = map(int, input().split(" "))
+nums = [0] * N
+while M !=0:
+    i,j,k = map(int,input().split(" "))
+    while i!=j+1:
+        nums[i-1] = k
+        i+=1
+    M-=1
+print(*nums, sep=' ')

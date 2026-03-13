@@ -1,3 +1,8 @@
-N = int(input())
-nums = list(map(int,input().split(" ")))
-print(min(nums), max(nums),  sep=" ")
+num = int(input())
+
+v = list(map(int, input().split()))
+
+if len(v) != num:
+    raise ValueError('입력 개수가 맞지 않습니다.') 
+
+print(min(v),  max(v))
